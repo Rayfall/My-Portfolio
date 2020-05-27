@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+  margin: 0;
+  background-color: #15192B;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-header img {
+  margin: 50px;
+}
+
+.inner-nav-div {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  justify-content: space-evenly;
+}
+
+.inner-nav-div h3 {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.inner-nav-div a {
+  list-style-type: none;
+}
+
+.inner-nav-div a:hover {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+}
+
+h2 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+h3 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+h4 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+p {
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.App-header {
+  background-image: url("https://res.cloudinary.com/aetherfall/image/upload/v1589831298/my-portfolio/Background_Header_tq2n6q.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;  
+  z-index: -1;
+}
+
+/*
+Fonts--
+font-family: 'Source Code Pro', monospace;
+font-family: 'Questrial', sans-serif;
+
+Colors--
+#041348 - Dark Blue
+#FF8902 - Orange
+#3D43B4 - Dark Purple
+#8386F5 - Light Purple
+#C67B25 - Dark Orange
+*/
