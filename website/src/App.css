@@ -2,6 +2,7 @@
   text-align: center;
   margin: 0;
   background-color: #15192B;
+  height: 100vh;
 }
 
 .nav-header {
@@ -72,6 +73,7 @@ p {
   background-image: url("https://res.cloudinary.com/aetherfall/image/upload/v1589831298/my-portfolio/Background_Header_tq2n6q.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  height: 30%;
 }
 
 #overlay {

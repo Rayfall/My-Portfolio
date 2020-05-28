@@ -1,22 +1,44 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Tabletop from 'tabletop'
 
-export default function Projects() {
+class Projects extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      data: []
+    }
+  }
+  //let key = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRCg-UcbvD2VshfB4G21Ay6UGNyDrIB8GkCDF-59KBafC6OAsAR2k7Lb0ajx9uS8XmbR0kyxEGlQL8H/pubhtml";
 
-    let key = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRCg-UcbvD2VshfB4G21Ay6UGNyDrIB8GkCDF-59KBafC6OAsAR2k7Lb0ajx9uS8XmbR0kyxEGlQL8H/pubhtml";
+  componentDidMount() {
+    Tabletop.init({
+      key: 'https://docs.google.com/spreadsheets/d/1GV9cCJvJgPMX6nv2SFlIkL6UA6clT0k8na7NHg-3ZSQ/edit?usp=sharing',
+      callback: googleData => {
+        this.setState({
+          data: googleData
+      })},
+      simpleSheet: true
+    });    
+  }
 
-    function init() {
-        Tabletop.init( {
-          key: 'https://docs.google.com/spreadsheets/d/1GV9cCJvJgPMX6nv2SFlIkL6UA6clT0k8na7NHg-3ZSQ/edit?usp=sharing',
-          simpleSheet: true }
-        ).then(function(data, tabletop) { 
-          console.log(data)
-        })
-      }
-      window.addEventListener('DOMContentLoaded', init)
-
+  render() {
+    const { data } = this.state
     return (
-        <h1>My Projects</h1>
-    )
-
+      <div>
+        {
+          data.map(project => {
+            return (
+              <div key={project.Title}>
+                  <h3><a href = {project.URL}  target="_blank"> {project.Title}</a></h3>
+                  <img alt={project.Description} src={project.Image} height="200" width="200"/>
+                  <p>{project.Description}</p>
+              </div>
+            )
+          })
+        }
+      </div>
+    );
+  }    
 }
+
+export default Projects;

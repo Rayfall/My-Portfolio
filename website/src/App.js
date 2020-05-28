@@ -18,11 +18,9 @@ function App() {
         <Nav brand={logo} links={navlinks}/>   
         <div>
           <h1>Andrew T. Grant</h1>
-          <h2>Engineer</h2>
-          <h2>Artist</h2>
-          <h2>Developer</h2>
-        </div>        
-        <p>Testing Paragraph</p>
+          <h2><span>Engineer</span> <span>Artist</span> <span>Developer</span></h2>
+          <h3>I write code, study lines, debug complications, and I love it. <br/> I also love my wife and cat.</h3>
+        </div>
       </header>
       <section>
         <Projects/>
