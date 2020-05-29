@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Tabletop from 'tabletop'
+import Tabletop from 'tabletop';
+import './Styles/Projects.css'
 
 class Projects extends React.Component {
   constructor() {
@@ -24,7 +25,7 @@ class Projects extends React.Component {
   render() {
     const { data } = this.state
     return (
-      <div>
+      <div className="project-div">
         {
           data.map(project => {
             return (

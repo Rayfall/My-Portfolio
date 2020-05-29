@@ -1,0 +1,9 @@
+.project-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-div div {
+    margin: 20px;
+}
