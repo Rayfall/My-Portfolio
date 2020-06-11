@@ -2,8 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #15192B;
+    height: 100%;
 }
 
 .project-div div {
     margin: 20px;
+}
+
+.project-div a {
+    color: white;
+    text-decoration: none;
+}
+
+.project-div a:hover {
+    color: #40457B;
 }

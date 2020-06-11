@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Styles/Nav.css"
 
 export default function Navigation(props) {
     const {brand, links} = props;

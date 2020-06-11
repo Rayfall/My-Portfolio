@@ -1,38 +1,6 @@
 .App {
   text-align: center;
   margin: 0;
-  background-color: #15192B;
-  height: 100vh;
-}
-
-.nav-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.nav-header img {
-  margin: 50px;
-}
-
-.inner-nav-div {
-  display: flex;
-  flex-direction: row;
-  margin: 50px;
-  justify-content: space-evenly;
-}
-
-.inner-nav-div h3 {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-.inner-nav-div a {
-  list-style-type: none;
-}
-
-.inner-nav-div a:hover {
-  list-style-type: none;
 }
 
 h1 {
@@ -73,7 +41,8 @@ p {
   background-image: url("https://res.cloudinary.com/aetherfall/image/upload/v1589831298/my-portfolio/Background_Header_tq2n6q.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 30%;
+  height: 30vh;
+  background-color: #15192B;
 }
 
 #overlay {
